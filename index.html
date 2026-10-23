@@ -11,19 +11,18 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23e8a849' width='100' height='100' rx='24'/><path fill='%230c0c0c' d='M30 62 Q50 44 70 62 M36 50 Q50 36 64 50' stroke='%230c0c0c' stroke-width='6' fill='none' stroke-linecap='round'/></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@300;400;500;600;700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- ===== FONDO DECORATIVO ===== -->
   <div class="bg-canvas" aria-hidden="true">
     <svg class="bg-canvas__blob" viewBox="0 0 1200 800" preserveAspectRatio="none">
       <defs>
         <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#e8a849" stop-opacity="0.18"></stop>
-          <stop offset="50%" stop-color="#f6c453" stop-opacity="0.08"></stop>
-          <stop offset="100%" stop-color="#e8a849" stop-opacity="0.18"></stop>
+          <stop offset="0%" stop-color="#e8a849" stop-opacity="0.16"></stop>
+          <stop offset="50%" stop-color="#f6c453" stop-opacity="0.06"></stop>
+          <stop offset="100%" stop-color="#e8a849" stop-opacity="0.16"></stop>
         </linearGradient>
         <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stop-color="#1a0e08"></stop>
@@ -36,7 +35,6 @@
     </svg>
   </div>
 
-  <!-- ===== NAVEGACIÓN ===== -->
   <header class="nav" id="nav">
     <div class="nav__inner">
       <a href="#inicio" class="nav__logo">
@@ -60,7 +58,6 @@
     </div>
   </header>
 
-  <!-- PANEL MOBILE -->
   <div class="nav__panel" id="navPanel" role="dialog" aria-label="Menú de navegación">
     <button class="nav__panel-close" id="navClose" aria-label="Cerrar menú">
       <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
@@ -74,17 +71,18 @@
     <a href="#contacto" class="nav__cta">Comprar</a>
   </div>
 
-  <!-- ===== HERO ===== -->
   <section class="hero" id="inicio">
+    <div class="hero__bg"></div>
+    <div class="hero__glow hero__glow--top"></div>
     <div class="hero__inner">
       <div class="hero__copy">
         <p class="hero__kicker">Nueva colección 2026</p>
         <h1 class="hero__title">
           Stand out<br>
-          <span class="hero__title--accent">Without trying</span>
+          <span class="hero__title--accent">without trying</span>
         </h1>
         <p class="hero__subtitle">
-          No es solo abrigar. Es salir al aire, sentirse seguro, cómodo y completamente tu.
+          No es solo abrigar. Es salir al aire, sentirse seguro, cómodo y completamente tú.
         </p>
         <div class="hero__actions">
           <a href="#colecciones" class="btn btn--primary">Ver el look <span class="btn__arrow">→</span></a>
@@ -131,7 +129,6 @@
     </div>
   </section>
 
-  <!-- ===== COLECCIONES ===== -->
   <section class="section colecciones" id="colecciones">
     <div class="container">
       <div class="section__header">
@@ -141,27 +138,33 @@
       </div>
       <div class="cards">
         <article class="card">
-          <img class="card__img" src="img/pexels_7037820.jpg" srcset="img/webp/pexels_7037820.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Warm Chase" loading="lazy">
+          <div class="card__img-wrap">
+            <img class="card__img" src="img/pexels_7037820.jpg" srcset="img/webp/pexels_7037820.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Warm Chase naranja" loading="lazy">
+            <span class="card__badge">Naranja</span>
+          </div>
           <div class="card__body">
-            <p class="card__tag">Naranja</p>
             <h3 class="card__title">Warm Chase</h3>
             <p class="card__desc">Puffer extra fino, para días sin prisa.</p>
             <a href="#contacto" class="card__btn">Ver detalle <span class="card__arrow">→</span></a>
           </div>
         </article>
         <article class="card">
-          <img class="card__img" src="img/pexels_4059754.jpg" srcset="img/webp/pexels_4059754.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Noir Balance" loading="lazy">
+          <div class="card__img-wrap">
+            <img class="card__img" src="img/pexels_4059754.jpg" srcset="img/webp/pexels_4059754.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Noir Balance negro" loading="lazy">
+            <span class="card__badge">Negro</span>
+          </div>
           <div class="card__body">
-            <p class="card__tag">Negro</p>
             <h3 class="card__title">Noir Balance</h3>
             <p class="card__desc">Base neutra, para combinar con todo.</p>
             <a href="#contacto" class="card__btn">Ver detalle <span class="card__arrow">→</span></a>
           </div>
         </article>
         <article class="card">
-          <img class="card__img" src="img/pexels_5075513.jpg" srcset="img/webp/pexels_5075513.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Red Signal" loading="lazy">
+          <div class="card__img-wrap">
+            <img class="card__img" src="img/pexels_5075513.jpg" srcset="img/webp/pexels_5075513.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Red Signal rojo" loading="lazy">
+            <span class="card__badge">Rojo</span>
+          </div>
           <div class="card__body">
-            <p class="card__tag">Rojo</p>
             <h3 class="card__title">Red Signal</h3>
             <p class="card__desc">Foco absoluto para la punta del máximo.</p>
             <a href="#contacto" class="card__btn">Ver detalle <span class="card__arrow">→</span></a>
@@ -171,7 +174,6 @@
     </div>
   </section>
 
-  <!-- ===== CARACTERÍSTICAS ===== -->
   <section class="section caracteristicas" id="caracteristicas">
     <div class="container">
       <div class="caracteristicas__grid">
@@ -194,7 +196,6 @@
     </div>
   </section>
 
-  <!-- ===== NOSOTROS ===== -->
   <section class="section nosotros" id="nosotros">
     <div class="container">
       <div class="nosotros__inner">
@@ -222,7 +223,6 @@
     </div>
   </section>
 
-  <!-- ===== TESTIMONIOS ===== -->
   <section class="section testimonios">
     <div class="container">
       <div class="section__header">
@@ -246,7 +246,6 @@
     </div>
   </section>
 
-  <!-- ===== NEWSLETTER ===== -->
   <section class="section newsletter">
     <div class="container">
       <div class="newsletter__inner">
@@ -265,7 +264,6 @@
     </div>
   </section>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
