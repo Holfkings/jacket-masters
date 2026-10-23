@@ -1,0 +1,14 @@
+# Jacket Masters — Render single-service config
+# One app = static site + /api/product + /api/newsletter.
+services:
+  - type: web
+    name: jacket-masters
+    env: docker
+    dockerfilePath: Dockerfile
+    dockerContext: .
+    plan: free
+    autoDeploy: true
+    # PORT is injected by Render for docker services.
+    envVars:
+      - key: PORT
+        value: "8000"

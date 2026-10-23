@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacket Masters — Stand out Without trying</title>
+  <meta name="description" content="Puffer jacket premium. Diseñado para destacar sin esfuerzo. Sección de tallas, colores y carrusel de productos.">
+  <meta property="og:title" content="Jacket Masters">
+  <meta property="og:description" content="Puffer jacket premium. Stand out Without trying.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23e8a849' width='100' height='100' rx='24'/><path fill='%230c0c0c' d='M30 62 Q50 44 70 62 M36 50 Q50 36 64 50' stroke='%230c0c0c' stroke-width='6' fill='none' stroke-linecap='round'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;1,9..144,400&family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===== FONDO DECORATIVO ===== -->
+  <div class="bg-canvas" aria-hidden="true">
+    <svg class="bg-canvas__blob" viewBox="0 0 1200 800" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="blobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#e8a849" stop-opacity="0.18"></stop>
+          <stop offset="50%" stop-color="#f6c453" stop-opacity="0.08"></stop>
+          <stop offset="100%" stop-color="#e8a849" stop-opacity="0.18"></stop>
+        </linearGradient>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#1a0e08"></stop>
+          <stop offset="55%" stop-color="#2a1a0e"></stop>
+          <stop offset="100%" stop-color="#3a2a18"></stop>
+        </linearGradient>
+      </defs>
+      <path class="bg-canvas__blob-fill" fill="url(#blobGrad)" d="M0,0 Q150,60 300,0 T600,0 T900,0 T1200,0 L1200,800 Q1050,860 900,800 T600,800 T300,800 T0,800 Z"></path>
+      <path class="bg-canvas__blob-fill" fill="url(#bgGrad)" d="M0,0 Q180,120 400,60 T800,40 T1200,60 L1200,800 Q1040,820 800,800 T400,800 T0,800 Z"></path>
+    </svg>
+  </div>
+
+  <!-- ===== NAVEGACIÓN ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#inicio" class="nav__logo">
+        <svg class="nav__logo-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#e8a849" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-3h2v3h-2zm0-6v-1.5c0-1.5 1.2-2.7 2.7-2.7h1.3c1.5 0 2.7 1.2 2.7 2.7v1.5h-3z"/>
+        </svg>
+        <span class="nav__logo-text">Jacket Masters</span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#colecciones">Colecciones</a>
+        <a href="#caracteristicas">Características</a>
+        <a href="#nosotros">Nosotros</a>
+      </nav>
+      <a href="#contacto" class="nav__cta">Comprar</a>
+      <button class="nav__menu-btn" id="navMenuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <svg class="nav__icon-burger" viewBox="0 0 24 24" width="24" height="24">
+          <path class="nav__icon-burger-line" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- PANEL MOBILE -->
+  <div class="nav__panel" id="navPanel" role="dialog" aria-label="Menú de navegación">
+    <button class="nav__panel-close" id="navClose" aria-label="Cerrar menú">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <nav class="nav__links nav__links--panel">
+      <a href="#inicio">Inicio</a>
+      <a href="#colecciones">Colecciones</a>
+      <a href="#caracteristicas">Características</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+    <a href="#contacto" class="nav__cta">Comprar</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="hero__kicker">Nueva colección 2026</p>
+        <h1 class="hero__title">
+          Stand out<br>
+          <span class="hero__title--accent">Without trying</span>
+        </h1>
+        <p class="hero__subtitle">
+          No es solo abrigar. Es salir al aire, sentirse seguro, cómodo y completamente tu.
+        </p>
+        <div class="hero__actions">
+          <a href="#colecciones" class="btn btn--primary">Ver el look <span class="btn__arrow">→</span></a>
+          <a href="#contacto" class="btn btn--ghost">Talleres</a>
+        </div>
+        <div class="hero__socials" aria-label="Redes sociales">
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-3.241.15-4.757 1.7-4.919 4.92-.057 1.28-.071 1.687-.071 4.951 0 3.259.014 3.668.071 4.951.162 3.253 1.7 4.797 4.919 4.949 1.28.057 1.688.071 4.951.071 3.259 0 3.668-.014 4.951-.071 3.241-.15 4.757-1.7 4.919-4.95.057-1.28.071-1.688.071-4.951 0-3.259-.014-3.667-.071-4.949-.15-3.253-1.701-4.797-4.919-4.949zm0 10.837c-3.204 0-3.584.012-4.85.07-3.252.148-4.771 1.691-4.919 4.919-.058 1.265-.069 1.645-.069 4.849 0 3.205.012 3.584.069 4.849.149 3.225 1.664 4.771 4.919 4.919 1.266.058 1.644.07 4.85.07 3.204 0 3.584-.012 4.849-.07 3.26-.149 4.771-1.699 4.919-4.92.058-1.265.07-1.644.07-4.849 0-3.204-.012-3.583-.07-4.849-.149-3.227-1.664-4.771-4.919-4.919-1.266-.057-1.644-.069-4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-3.241.15-4.757 1.7-4.919 4.92-.057 1.28-.071 1.687-.071 4.951 0 3.259.014 3.668.071 4.951.162 3.253 1.7 4.797 4.919 4.949 1.28.057 1.688.071 4.951.071 3.259 0 3.668-.014 4.951-.071 3.241-.15 4.757-1.7 4.919-4.95.057-1.28.071-1.688.071-4.951 0-3.259-.014-3.667-.071-4.949-.15-3.253-1.701-4.797-4.919-4.949z"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.99 9.747M9.745 4.676A7.48 7.48 0 0 1 9.745 3.933m0 10.974a7.48 7.48 0 0 0 6.386 3.518M9.745 4.676v2.883M16.925 4.676v2.883M7.79 8.636h2.422v9.045H7.79z"/></svg></a>
+          <a href="#" aria-label="X / Twitter"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.168 17.52h1.833L7.084 4.126H5.125z"/></svg></a>
+          <a href="#" aria-label="Behance"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg></a>
+        </div>
+      </div>
+      <div class="hero__product">
+        <div class="hero__product-frame">
+          <img class="hero__product-img" src="img/pexels_7037820.jpg" srcset="img/webp/hero.webp 800w, img/webp/hero-1200.webp 1200w" sizes="(max-width: 640px) 200px, 280px" alt="Puffer jacketa naranja de Jacket Masters" loading="eager">
+        </div>
+        <div class="hero__options">
+          <div class="options__group">
+            <p class="options__label">Talle</p>
+            <div class="options__chips">
+              <button class="chip chip--active" data-size="36">36</button>
+              <button class="chip" data-size="38">38</button>
+              <button class="chip" data-size="40">40</button>
+            </div>
+          </div>
+          <div class="options__group">
+            <p class="options__label">Color</p>
+            <div class="options__swatches">
+              <button class="swatch swatch--active" data-color="orange" aria-label="Naranja"></button>
+              <button class="swatch" data-color="black" aria-label="Negro"></button>
+              <button class="swatch" data-color="red" aria-label="Rojo"></button>
+            </div>
+          </div>
+          <div class="options__price">
+            <p class="options__price-label">Precio</p>
+            <p class="options__price-value options__price-value--sale">$149 <span class="options__price-strike">$199</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__marker"></div>
+    <div class="hero__bg-detail" aria-hidden="true">
+      <p class="hero__tagline">Confidence, wrapped in warmth.</p>
+    </div>
+  </section>
+
+  <!-- ===== COLECCIONES ===== -->
+  <section class="section colecciones" id="colecciones">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__kicker">La colección</p>
+        <h2 class="section__title">Los puffer que marcan diferencia</h2>
+        <p class="section__desc">Tres texturas, tres intenciones. Cada uno está hecho para un momento distinto.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <img class="card__img" src="img/pexels_7037820.jpg" srcset="img/webp/pexels_7037820.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Warm Chase" loading="lazy">
+          <div class="card__body">
+            <p class="card__tag">Naranja</p>
+            <h3 class="card__title">Warm Chase</h3>
+            <p class="card__desc">Puffer extra fino, para días sin prisa.</p>
+            <a href="#contacto" class="card__btn">Ver detalle <span class="card__arrow">→</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__img" src="img/pexels_4059754.jpg" srcset="img/webp/pexels_4059754.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Noir Balance" loading="lazy">
+          <div class="card__body">
+            <p class="card__tag">Negro</p>
+            <h3 class="card__title">Noir Balance</h3>
+            <p class="card__desc">Base neutra, para combinar con todo.</p>
+            <a href="#contacto" class="card__btn">Ver detalle <span class="card__arrow">→</span></a>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__img" src="img/pexels_5075513.jpg" srcset="img/webp/pexels_5075513.webp 800w" sizes="(max-width: 640px) 100vw, 300px" alt="Puffer Red Signal" loading="lazy">
+          <div class="card__body">
+            <p class="card__tag">Rojo</p>
+            <h3 class="card__title">Red Signal</h3>
+            <p class="card__desc">Foco absoluto para la punta del máximo.</p>
+            <a href="#contacto" class="card__btn">Ver detalle <span class="card__arrow">→</span></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARACTERÍSTICAS ===== -->
+  <section class="section caracteristicas" id="caracteristicas">
+    <div class="container">
+      <div class="caracteristicas__grid">
+        <div class="caracteristicas__item">
+          <svg class="caracteristicas__icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="#e8a849" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-3h2v3h-2zm0-6v-1.5c0-1.5 1.2-2.7 2.7-2.7h1.3c1.5 0 2.7 1.2 2.7 2.7v1.5h-3z"/></svg>
+          <h3 class="caracteristicas__title">Abridge la diferencia</h3>
+          <p class="caracteristicas__desc">Relleno estratégico que trata la parte externa como una reduce de un pulgada.</p>
+        </div>
+        <div class="caracteristicas__item">
+          <svg class="caracteristicas__icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="#e8a849" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-3h2v3h-2zm0-6v-1.5c0-1.5 1.2-2.7 2.7-2.7h1.3c1.5 0 2.7 1.2 2.7 2.7v1.5h-3z"/></svg>
+          <h3 class="caracteristicas__title">Autónomo</h3>
+          <p class="caracteristicas__desc">Hydro-repellent de 30.000 mm, sin costuras internas que rodeen el agua.</p>
+        </div>
+        <div class="caracteristicas__item">
+          <svg class="caracteristicas__icon" viewBox="0 0 24 24" width="28" height="28" aria-hidden="true"><path fill="#e8a849" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-3h2v3h-2zm0-6v-1.5c0-1.5 1.2-2.7 2.7-2.7h1.3c1.5 0 2.7 1.2 2.7 2.7v1.5h-3z"/></svg>
+          <h3 class="caracteristicas__title">Reciclaje completo</h3>
+          <p class="caracteristicas__desc">Suela regenerada y tela técnica 100% reciclada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="section nosotros" id="nosotros">
+    <div class="container">
+      <div class="nosotros__inner">
+        <div class="nosotros__text">
+          <p class="nosotros__kicker">La marca</p>
+          <h2 class="nosotros__title">Hecho para la gente que no busca destacar, sino para la que <span class="nosotros__title--accent">lo hace</span></h2>
+          <p class="nosotros__desc">Jacket Masters nació en la calle, en lugar de en un taller. Colaboramos con talleristas independientes y operamos un modelo de producción pequeña y controlada.</p>
+          <a href="#contacto" class="btn btn--primary btn--wide">Saber más <span class="btn__arrow">→</span></a>
+        </div>
+        <div class="nosotros__stats">
+          <div class="stats__item">
+            <p class="stats__num">12k+</p>
+            <p class="stats__label">Prendas vendidas</p>
+          </div>
+          <div class="stats__item">
+            <p class="stats__num">4.2</p>
+            <p class="stats__label">Años de comunidad</p>
+          </div>
+          <div class="stats__item">
+            <p class="stats__num">18</p>
+            <p class="stats__label">Talleristas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIOS ===== -->
+  <section class="section testimonios">
+    <div class="container">
+      <div class="section__header">
+        <p class="section__kicker">Testimonios</p>
+        <h2 class="section__title">Lo que dicen</h2>
+      </div>
+      <div class="testimonios__list">
+        <figure class="testimonio">
+          <blockquote class="testimonio__quote">“La primera vez que me puse este puffer me fui a un evento sin preparación. Volví dorado. No es que el abrigo haya cambiado mi vida: es que me sentí como debería.”</blockquote>
+          <figcaption class="testimonio__author">Marta R., Bogotá</figcaption>
+        </figure>
+        <figure class="testimonio">
+          <blockquote class="testimonio__quote">“Más flaca que la de siempre, sin embargo más abrigo. El detalle en el cuello es un placer en cada ojo.”</blockquote>
+          <figcaption class="testimonio__author">Camilo A., Medellín</figcaption>
+        </figure>
+        <figure class="testimonio">
+          <blockquote class="testimonio__quote">“A la primera. No es el precio, no es la talla: es que se queda tal cual, sin estrés, sin tejido que te obligue a cuidarlo.”</blockquote>
+          <figcaption class="testimonio__author">Valeria V., Cali</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="section newsletter">
+    <div class="container">
+      <div class="newsletter__inner">
+        <p class="newsletter__kicker">Quiero más información</p>
+        <h2 class="newsletter__title">Quiero saber de nuevas piezas, campañas y talleristas</h2>
+        <p class="newsletter__desc">Sin spam, sin newsletter pesada. Solo piezas reales, cuando existen.</p>
+        <form class="newsletter__form" id="newsletterForm" novalidate>
+          <div class="newsletter__fields">
+            <label class="visually-hidden" for="newsletterEmail">Correo electrónico</label>
+            <input type="email" id="newsletterEmail" placeholder="tu@correo.com" aria-label="Correo electrónico">
+            <button class="btn btn--primary" type="submit">Suscribirme <span class="btn__arrow">→</span></button>
+          </div>
+          <p class="newsletter__error" id="newsletterError" role="alert"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <a href="#inicio" class="nav__logo">
+            <svg class="nav__logo-icon" viewBox="0 0 24 24" aria-hidden="true"><path fill="#e8a849" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-3h2v3h-2zm0-6v-1.5c0-1.5 1.2-2.7 2.7-2.7h1.3c1.5 0 2.7 1.2 2.7 2.7v1.5h-3z"/></svg>
+            <span class="nav__logo-text">Jacket Masters</span>
+          </a>
+          <p class="footer__tagline">Diseñado para el que no busca destacar, sino para la que lo hace.</p>
+        </div>
+        <div class="footer__links">
+          <div class="footer__col">
+            <p><strong>Catálogo</strong></p>
+            <ul class="footer__list">
+              <li><a href="#inicio">Puffer Naranja</a></li>
+              <li><a href="#inicio">Puffer Negro</a></li>
+              <li><a href="#inicio">Puffer Rojo</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p><strong>Marca</strong></p>
+            <ul class="footer__list">
+              <li><a href="#inicio">Historia</a></li>
+              <li><a href="#inicio">Talleristas</a></li>
+              <li><a href="#inicio">Impacto</a></li>
+            </ul>
+          </div>
+          <div class="footer__col">
+            <p><strong>Atención</strong></p>
+            <ul class="footer__list">
+              <li><a href="#inicio">Talleres</a></li>
+              <li><a href="#inicio">Envíos y devoluciones</a></li>
+              <li><a href="#inicio">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Jacket Masters. Hecho con <span class="footer__heart">♡</span> en Colombia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
